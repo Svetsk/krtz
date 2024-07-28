@@ -4,9 +4,21 @@ import { ref } from 'vue';
 const fio = ref('');
 const phone = ref('');
 const comment = ref('');
+const notificationVisible = ref(false);
+const notificationMessage = ref('');
 
 const submitForm = async () => {
   try {
+    // Дополнительная проверка номера телефона
+    if (!/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/.test(phone.value)) {
+      notificationMessage.value = 'Некорректный формат номера телефона';
+      notificationVisible.value = true;
+      setTimeout(() => {
+        notificationVisible.value = false;
+      }, 3000);
+      return;
+    }
+
     const response = await fetch('/api/sendMessage', {
       method: 'POST',
       headers: {
@@ -18,18 +30,28 @@ const submitForm = async () => {
         comment: comment.value,
       }),
     });
+
     const data = await response.json();
     if (data.ok) {
-      console.log('Сообщение отправлено успешно');
+      notificationMessage.value = 'Сообщение отправлено успешно';
+      // Сброс полей формы
+      fio.value = '';
+      phone.value = '';
+      comment.value = '';
     } else {
-      console.log('Ошибка отправки сообщения');
+      notificationMessage.value = 'Ошибка отправки сообщения';
     }
   } catch (error) {
     console.error('Ошибка:', error);
-    console.log('Ошибка отправки сообщения');
+    notificationMessage.value = 'Ошибка отправки сообщения';
   }
+  notificationVisible.value = true;
+  setTimeout(() => {
+    notificationVisible.value = false;
+  }, 5000); // Увеличил время отображения уведомления до 5 секунд
 };
 </script>
+
 
 <template>
   <div class="pt-[300px] relative ffo" id="forma">
@@ -58,11 +80,13 @@ const submitForm = async () => {
               <button type="submit">Записаться</button>
             </div>
           </form>
+          <ui-Notification v-if="notificationVisible" :message="notificationMessage" :show="notificationVisible" />
         </div>
       </div>
     </div>
   </div>
 </template>
+
 
 <style scoped lang="scss">
 .form{
@@ -213,6 +237,8 @@ button{
     width: 240px;
     height: auto;
   }
-
+  .two{
+    z-index: 0;
+  }
 }
 </style>

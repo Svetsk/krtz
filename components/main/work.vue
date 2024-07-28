@@ -31,14 +31,14 @@
       </div>
       <div class="card">
         <div>
-          <nuxt-img src="/image/work/sverl.png" />
-          <p>Сверлильные работы</p>
+          <nuxt-img src="/image/work/press.png" />
+          <p>Прессовые работы</p>
         </div>
       </div>
       <div class="card">
         <div>
-          <nuxt-img src="/image/work/sverl.png" />
-          <p>Сверлильные работы</p>
+          <nuxt-img src="/image/work/sles.png" />
+          <p>Слесарные работы</p>
         </div>
       </div>
     </div>

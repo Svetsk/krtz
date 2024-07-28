@@ -10,6 +10,7 @@ export default {
 
 <template>
   <div class="container">
+    <ui-elements-title title="Галерея" class="pb-[48px] pt-[24px]" />
     <div class="flex flex-wrap justify-between gap-y-[42px] blocks">
       <nuxt-img src="/image/galary/photoOne.png" class="w-[360px] h-[360px]" />
       <nuxt-img src="/image/galary/photoOne.png" class="w-[360px] h-[360px]" />

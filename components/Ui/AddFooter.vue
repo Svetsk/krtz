@@ -10,7 +10,7 @@
               <path opacity="0.5" d="M36.2438 41.918C32.4405 42.2756 23.1445 41.8803 13.2372 31.9462C3.89217 22.5768 2.21684 14.5462 2.00684 10.8145" stroke="black" stroke-width="3"/>
               <path opacity="0.5" d="M30.2329 28.7267C30.2329 28.7267 27.7082 31.2584 20.8132 24.3455C13.9182 17.4326 16.4452 14.8984 16.4452 14.8984" stroke="black" stroke-width="3" stroke-linecap="round"/>
             </svg>
-            <p class="text-[26px] font-[600]">+7 (903) 872-33-33</p>
+            <a href="tel:+79038723333" class="text-[26px] font-[600]">+7 (903) 872-33-33</a>
           </div>
           <div class="flex items-center gap-[24px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
@@ -38,7 +38,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" fill="none">
               <path d="M4.2 32C3.045 32 2.0566 31.6087 1.2348 30.826C0.413 30.0433 0.0014 29.1013 0 28V4C0 2.9 0.4116 1.95867 1.2348 1.176C2.058 0.393333 3.0464 0.00133333 4.2 0H37.8C38.955 0 39.9441 0.392 40.7673 1.176C41.5905 1.96 42.0014 2.90133 42 4V28C42 29.1 41.5891 30.042 40.7673 30.826C39.9455 31.61 38.9564 32.0013 37.8 32H4.2ZM21 18L4.2 8V28H37.8V8L21 18ZM21 14L37.8 4H4.2L21 14ZM4.2 8V4V28V8Z" fill="black"/>
             </svg>
-            <p class="text-[26px] font-[600]">gk-rtz@mail.ru</p>
+            <a href="mailto:gk-rtz@mail.ru" class="text-[26px] font-[600]">gk-rtz@mail.ru</a>
           </div>
           <div>
             <p class="text-[26px] font-[700]">Офис:</p>

@@ -42,18 +42,18 @@ export default {
   <header :class="headerClass">
     <div class="container">
       <div class="flex justify-between items-center py-[25px] htadf">
-        <div class="logo flex gap-[18px] items-center">
+        <a href="/" class="logo flex gap-[18px] items-center">
           <nuxt-img src="/image/logo.png" />
           <div class="line"></div>
           <p>Курский<br>Ремонтно-Технический<br>Завод</p>
-        </div>
+        </a>
         <div class="flex flex-col gap-[16px] items-end justify-end sdf">
           <div class="flex gap-[60px] asd">
             <div class="blocks">
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20" fill="none">
                 <path d="M2.85997 20C2.16479 20 1.56988 19.7554 1.07525 19.2662C0.580612 18.7771 0.332874 18.1883 0.332031 17.5V2.5C0.332031 1.8125 0.57977 1.22417 1.07525 0.735C1.57072 0.245833 2.16563 0.000833333 2.85997 0H23.0835C23.7787 0 24.374 0.245 24.8695 0.735C25.365 1.225 25.6123 1.81333 25.6114 2.5V17.5C25.6114 18.1875 25.3641 18.7762 24.8695 19.2662C24.3749 19.7562 23.7795 20.0008 23.0835 20H2.85997ZM12.9717 11.25L2.85997 5V17.5H23.0835V5L12.9717 11.25ZM12.9717 8.75L23.0835 2.5H2.85997L12.9717 8.75ZM2.85997 5V2.5V17.5V5Z" fill="white"/>
               </svg>
-              <p>gk-rtz@mail.ru</p>
+              <a href="mailto:gk-rtz@mail.ru">gk-rtz@mail.ru</a>
             </div>
             <div class="blocks">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
@@ -257,12 +257,18 @@ p{
     gap: 48px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
   header{
-    width: 390px;
+    max-width: 100%;
+    width: 391px;
   }
   .mob{
     width: 60%;
+  }
+}
+@media screen and (max-width: 390px) {
+  header{
+    width: 390px;
   }
 }
 .router-link-active{

@@ -8,6 +8,7 @@ useSeoMeta({
 <template>
   <div>
         <main-banner />
+        <div id="forma"></div>
         <main-form id="target-section" />
   </div>
 </template>

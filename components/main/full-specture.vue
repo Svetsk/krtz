@@ -206,10 +206,10 @@
           </div>
         </div>
         <div class="flex gap-[40px] items-center buttonss">
-          <a href="">
+          <a href="#forma">
             Оставить заявку
           </a>
-          <a href="/download/bannerlogo.png" download>
+          <a href="/download/catalog.pdf" download>
             Изучить каталог
           </a>
         </div>

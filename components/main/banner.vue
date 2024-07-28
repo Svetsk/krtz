@@ -159,6 +159,9 @@ h1{
     font-size: 32px;
     line-height: 48px;
   }
+  .max-ww{
+    padding-top: 128px;
+  }
 }
 @media screen and (max-width: 540px) {
   h1{
@@ -170,6 +173,12 @@ h1{
   .max-ww{
     background-size: cover;
     background-position: center;
+  }
+  .regalii__block{
+    justify-content: flex-start;
+  }
+  .block{
+    justify-content: flex-start;
   }
 }
 </style>

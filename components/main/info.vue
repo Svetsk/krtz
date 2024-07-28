@@ -78,5 +78,8 @@ export default {
     position: relative;
     width: 100%;
   }
+  .mySwiper{
+    height: 150px;
+  }
 }
 </style>

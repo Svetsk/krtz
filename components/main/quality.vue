@@ -100,6 +100,10 @@
     justify-content: center;
     align-items: center;
   }
+  .wqw{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 @media screen and (max-width: 720px){
   .subtitle{

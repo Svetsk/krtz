@@ -32,7 +32,7 @@ const submitForm = async () => {
 </script>
 
 <template>
-  <div class="pt-[300px] relative" id="forma">
+  <div class="pt-[300px] relative ffo" id="forma">
     <nuxt-img src="/image/settings.png" class="absolute z-[1] left-[800px] bottom-0 w-[250px] one" />
     <nuxt-img src="/image/settings.png" class="absolute z-[11] left-[900px] w-[200px] two" />
     <div class="container z-100">
@@ -140,6 +140,9 @@ button{
   .one{
     left: 20% !important;
   }
+  .ffo{
+    padding-top: 150px;
+  }
 }
 @media screen and (max-width: 690px) {
   .form{
@@ -159,7 +162,7 @@ button{
 }
 @media screen and (max-width: 500px) {
   .form{
-    padding: 28px 4px 18px !important;
+    //padding: 28px 4px 18px !important;
     justify-content: center;
     align-items: center;
     & input{
@@ -183,8 +186,11 @@ button{
     height: 128px !important;
     & img{
       width: 128px !important;
-      height: 128px !important;
+      height: auto !important;
     }
+  }
+  .ffo{
+    padding-top: 48px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -207,5 +213,6 @@ button{
     width: 240px;
     height: auto;
   }
+
 }
 </style>

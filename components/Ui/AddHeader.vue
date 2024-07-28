@@ -245,17 +245,24 @@ p{
 }
 @media screen and (max-width: 650px) {
   .mob{
-    width: 40%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 420px) {
   header{
     width: 420px;
   }
+  .bur{
+    justify-content: flex-start;
+    gap: 48px;
+  }
 }
 @media screen and (max-width: 390px) {
   header{
     width: 390px;
+  }
+  .mob{
+    width: 60%;
   }
 }
 .router-link-active{

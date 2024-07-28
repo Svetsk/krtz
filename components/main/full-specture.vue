@@ -328,6 +328,11 @@ ul{
     font-size: 16px !important;
   }
 }
+@media screen and (max-width: 480px){
+  .buttonss{
+    flex-direction: column !important;
+  }
+}
 @media screen and (max-width: 440px){
   ul li{
     max-width: 200px;

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-[200px] pb-[48px]">
+  <footer class="pt-[200px] pb-[48px] fot">
     <div class="container">
       <ui-elements-title title="Контакты" />
       <div class="flex justify-between items-start flex-wrap pt-[70px] vbv">
@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script setup>
@@ -144,6 +144,9 @@ li{
   }
   .vbv{
     gap: 48px;
+  }
+  .fot{
+    padding-top: 92px;
   }
 }
 </style>

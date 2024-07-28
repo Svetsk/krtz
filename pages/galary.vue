@@ -4,8 +4,9 @@
 
 <template>
   <div>
-        <main-banner />
-        <main-form id="target-section" />
+    <main-banner />
+    <galary id="target-section" />
+    <main-form />
   </div>
 </template>
 

@@ -47,7 +47,7 @@
 
 <style scoped lang="scss">
 .qq{
-  background: url("~/image/qual.png") no-repeat 130%;
+  background: url("/image/qual.png") no-repeat 130%;
   background-position: bottom;
 }
 .item{

@@ -87,7 +87,7 @@
 }
 .max-ww{
   padding-top: 288px;
-  background: url("~/image/bg-ban.png") no-repeat;
+  background: url("/image/bg-ban.png") no-repeat;
   background-size: 100% 120%;
   height: auto;
 }

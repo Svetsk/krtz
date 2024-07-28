@@ -224,7 +224,7 @@
 }
 .wrapper{
   border-radius: 20px;
-  background: url("~/image/bg-specture.png") center no-repeat ,linear-gradient(180deg, #EA7F00 0%, #E69B01 100%);
+  background: url("/image/bg-specture.png") center no-repeat ,linear-gradient(180deg, #EA7F00 0%, #E69B01 100%);
 }
 h2{
   color: #FFF;
